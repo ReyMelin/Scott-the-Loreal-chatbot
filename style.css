@@ -29,6 +29,13 @@ body {
   padding-top: 50px;
 }
 
+/* Logo styling - responsive */
+.site-logo {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
 .site-title {
   font-size: 22px;
   font-weight: 500;
@@ -211,4 +218,79 @@ body {
 
 .site-footer a:hover {
   color: var(--color-primary-hover);
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  /* Make page wrapper responsive */
+  .page-wrapper {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  /* Adjust header for mobile */
+  .site-header {
+    padding-top: 30px;
+  }
+
+  /* Smaller logo on mobile */
+  .site-logo {
+    max-width: 150px;
+  }
+
+  .site-title {
+    font-size: 18px;
+  }
+
+  /* Chat window adjustments */
+  .chat-window {
+    height: 400px;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  /* Make message bubbles wider on mobile */
+  .msg-bubble {
+    max-width: 85%;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  /* Input form adjustments */
+  .chat-form input {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .chat-form button {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* Footer text smaller */
+  .site-footer {
+    font-size: 12px;
+    margin: 40px 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small screens */
+  .site-logo {
+    max-width: 120px;
+  }
+
+  .site-title {
+    font-size: 16px;
+  }
+
+  .chat-window {
+    height: 350px;
+    padding: 12px;
+  }
+
+  .msg-bubble {
+    max-width: 90%;
+    font-size: 13px;
+  }
 }
